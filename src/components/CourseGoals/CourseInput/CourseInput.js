@@ -11,7 +11,7 @@ import styles from "./CourseInput.module.css";
 //     font-weight: bold;
 //     display: block;
 //     margin-bottom: 0.5rem;
-//     color: ${(props) => (props.invalid ? "red" : "black")}
+//     color: ${(props) => (props.invalid `? "red" : "black")}
 //   }
 
 //   & input {
@@ -56,7 +56,7 @@ const CourseInput = (props) => {
       <div
         className={`${styles["form-control"]} ${!isValid && styles.invalid}`}
       >
-        <label>Course Goal</label>
+        <label>Daily Goals</label>
         <input type="text" onChange={goalInputChangeHandler} />
       </div>
       <Button type="submit">Add Goal</Button>
